@@ -13,8 +13,15 @@ gridItem.forEach(ravioli => {
   function onHover(){
     ravioli.style.backgroundColor = "orange"
   }
-  
-  
 });
   
 //learn arrow functions!!!! and understand the function above! https://www.queryselectorall.com/addeventlistener
+//const array1 = ['a', 'b', 'c'];   correct syntax for forEach
+//array1.forEach((element) => console.log(element));
+//learn callbacks!
+
+const squareNumber = document.querySelector(".squareNumber")
+squareNumber.addEventListener("click", setGridLengthSquares)
+function setGridLengthSquares () {
+  let inputLength = parseInt(prompt("Choose how many squares long is the side of the grid", "10"));
+}
