@@ -4,10 +4,11 @@
   display: flex;
   flex-wrap: wrap;
   border: 1px solid red;
-  max-width: 960px;
+  max-width: 800px;
+  height: 800px;
 }
 
 .gridClass {
   width: 6.25%;
-  /* height: 6.25%; */
+  
 }
