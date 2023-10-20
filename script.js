@@ -11,7 +11,8 @@ const gridItem = document.querySelectorAll(".gridClass");
 gridItem.forEach(ravioli => {
   ravioli.addEventListener("mouseover", onHover);
   function onHover(){
-    ravioli.style.backgroundColor = "orange"
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    ravioli.style.backgroundColor = "#" + randomColor
   }
 });
   
@@ -19,7 +20,6 @@ gridItem.forEach(ravioli => {
 //const array1 = ['a', 'b', 'c'];   correct syntax for forEach
 //array1.forEach((element) => console.log(element));
 //learn callbacks!
-//document.querySelectorAll('.classname').forEach(e => e.remove());
 
 const squareNumber = document.querySelector(".squareNumber")
 squareNumber.addEventListener("click", setGridLengthSquares)
@@ -43,7 +43,10 @@ function setGridLengthSquares () {
   gridItem.forEach(ravioli => {
     ravioli.addEventListener("mouseover", onHover);
     function onHover(){
-      ravioli.style.backgroundColor = "orange"
+      let randomColor = Math.floor(Math.random()*16777215).toString(16);
+      ravioli.style.backgroundColor = "#" + randomColor;
    }
   });
 }
+
+//https://magic-doggo.github.io/etch-a-sketch/
